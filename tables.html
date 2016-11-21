@@ -201,323 +201,340 @@
                         </h1>
                         <ol class="breadcrumb">
                             <li>
-                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                                <i class="fa fa-dashboard"></i>  <a href="index.html">Summary</a>
                             </li>
                             <li class="active">
-                                <i class="fa fa-table"></i> Tables
+                                <i class="fa fa-table"></i> Medical History
                             </li>
                         </ol>
                     </div>
                 </div>
                 <!-- /.row -->
 
+              <!--   <script>
+                function myFunction() {
+                  // Declare variables
+                  var input, filter, table, tr, td, i;
+                  input = document.getElementById("myInput");
+                  filter = input.value.toUpperCase();
+                  table = document.getElementById("medicalVisits");
+                  tr = table.getElementsByTagName("tr");
+
+                  // Loop through all table rows, and hide those who don't match the search query
+                  for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[1];
+                    if (td) {
+                      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                      } else {
+                        tr[i].style.display = "none";
+                      }
+                    }
+                  }
+                }
+                </script> -->
                 <div class="row">
-                    <div class="col-lg-6">
-                        <h2>Bordered Table</h2>
+                    <div class="col-lg-12">
+                        <h2 align="center">Medical Visits</h2>
+                        <div class="table-responsive">
+                            <!--<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">-->
+                            <table id="medicalVisits" class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Date Visited</th>
+                                        <th>Type</th>
+                                        <th>Purpose</th>
+                                        <th>Diagnosis</th>
+                                        <th>Solution</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Nov 20, 2016</td>
+                                        <td>Family Doctor</td>
+                                        <td>Blood test follow up.</td>
+                                        <td>High cholestrol</td>
+                                        <td>Atorvastatin</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nov 13, 2016</td>
+                                        <td>Family Doctor</td>
+                                        <td>Annual check-up/blood test.</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>August 11, 2016</td>
+                                        <td>Physiotherapist</td>
+                                        <td>Knee pains.</td>
+                                        <td>Rotated right hip.</td>
+                                        <td>Aligned right hip, follow up visit in a month.</td>
+                                        <td><a href="#">View</a></td>   
+                                    </tr>
+                                    <tr>
+                                        <td>June 07, 2016</td>
+                                        <td>Dentist</td>
+                                        <td>Wisdom teeth removal.</td>
+                                        <td>No space for bottom wisdom teeth to grow.</td>
+                                        <td>Removed bottom two teeth, do not eat hard foods for 3 days.</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>March 3, 2016</td>
+                                        <td>Family Doctor</td>
+                                        <td>Vaccination</td>
+                                        <td>-</td>
+                                        <td>Flu shot</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>January 13, 2016</td>
+                                        <td>Surgery</td>
+                                        <td>Appendicitis</td>
+                                        <td>-</td>
+                                        <td>Removed appendix.</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>December 5, 2015</td>
+                                        <td>Dermatologist</td>
+                                        <td>Acne</td>
+                                        <td>Oily skin.</td>
+                                        <td>Benzoyl peroxide</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 align="center">Prescriptions</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Date Prescribed</th>
+                                        <th>Medication</th>
+                                        <th>Prescribed By</th>
+                                        <th>Dosage</th>
+                                        <th>Duration</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Nov 20, 2016</td>
+                                        <td>Atorvastatin</td>
+                                        <td>Family Doctor</td>
+                                        <td>5 mg</td>
+                                        <td>Every day, for 1 month.</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>December 5, 2015</td>
+                                        <td>Benzoyl peroxide</td>
+                                        <td>Dermoatologist</td>
+                                        <td>Amount required to apply on entirity of face.</td>
+                                        <td>Once a week.</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>October 31, 2015</td>
+                                        <td>Oxycontin</td>
+                                        <td>Dentist</td>
+                                        <td>40 mg</td>
+                                        <td>When in pain, max one a day</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Vaccinations</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Date Vaccinated</th>
+                                        <th>Vaccination</th>
+                                        <th>Vaccinated By</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>March 3, 2016</td>
+                                        <td>Flu Shot</td>
+                                        <td>Family Doctor</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>October 24, 2015</td>
+                                        <td>Tetanus Shot</td>
+                                        <td>Family Doctor</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Surgeries/Operations</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Date Operated</th>
+                                        <th>Operation</th>
+                                        <th>Operated By</th>
+                                        <th>Surgens Comments</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>June 07, 2016</td>
+                                        <td>Wisdom teeth removal.</td>
+                                        <td>Dentist</td>
+                                        <td>Removed bottom two teeth, do not eat hard foods for 3 days.</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>January 13, 2016</td>
+                                        <td>Appendicitis</td>
+                                        <td>Surgeon</td>
+                                        <td>No exercising or eating sweets for 2 weeks.</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Active Health Issues and Allergies</h2>
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Page</th>
-                                        <th>Visits</th>
-                                        <th>% New Visits</th>
-                                        <th>Revenue</th>
+                                        <th>Date Diagnosed</th>
+                                        <th>Health Issue</th>
+                                        <th>Type</th>
+                                        <th>Status</th>
+                                        <th>Edit</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>/index.html</td>
-                                        <td>1265</td>
-                                        <td>32.3%</td>
-                                        <td>$321.33</td>
+                                        <td>Birth</td>
+                                        <td>Peanuts</td>
+                                        <td>Allergy</td>
+                                        <td>Ongoing</td>
+                                        <td><a href="#">View</a></td>
                                     </tr>
                                     <tr>
-                                        <td>/about.html</td>
-                                        <td>261</td>
-                                        <td>33.3%</td>
-                                        <td>$234.12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/sales.html</td>
-                                        <td>665</td>
-                                        <td>21.3%</td>
-                                        <td>$16.34</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog.html</td>
-                                        <td>9516</td>
-                                        <td>89.3%</td>
-                                        <td>$1644.43</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/404.html</td>
-                                        <td>23</td>
-                                        <td>34.3%</td>
-                                        <td>$23.52</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/services.html</td>
-                                        <td>421</td>
-                                        <td>60.3%</td>
-                                        <td>$724.32</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog/post.html</td>
-                                        <td>1233</td>
-                                        <td>93.2%</td>
-                                        <td>$126.34</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2>Bordered with Striped Rows</h2>
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Page</th>
-                                        <th>Visits</th>
-                                        <th>% New Visits</th>
-                                        <th>Revenue</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>/index.html</td>
-                                        <td>1265</td>
-                                        <td>32.3%</td>
-                                        <td>$321.33</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/about.html</td>
-                                        <td>261</td>
-                                        <td>33.3%</td>
-                                        <td>$234.12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/sales.html</td>
-                                        <td>665</td>
-                                        <td>21.3%</td>
-                                        <td>$16.34</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog.html</td>
-                                        <td>9516</td>
-                                        <td>89.3%</td>
-                                        <td>$1644.43</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/404.html</td>
-                                        <td>23</td>
-                                        <td>34.3%</td>
-                                        <td>$23.52</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/services.html</td>
-                                        <td>421</td>
-                                        <td>60.3%</td>
-                                        <td>$724.32</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog/post.html</td>
-                                        <td>1233</td>
-                                        <td>93.2%</td>
-                                        <td>$126.34</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2>Basic Table</h2>
-                        <div class="table-responsive">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Page</th>
-                                        <th>Visits</th>
-                                        <th>% New Visits</th>
-                                        <th>Revenue</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>/index.html</td>
-                                        <td>1265</td>
-                                        <td>32.3%</td>
-                                        <td>$321.33</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/about.html</td>
-                                        <td>261</td>
-                                        <td>33.3%</td>
-                                        <td>$234.12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/sales.html</td>
-                                        <td>665</td>
-                                        <td>21.3%</td>
-                                        <td>$16.34</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog.html</td>
-                                        <td>9516</td>
-                                        <td>89.3%</td>
-                                        <td>$1644.43</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/404.html</td>
-                                        <td>23</td>
-                                        <td>34.3%</td>
-                                        <td>$23.52</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/services.html</td>
-                                        <td>421</td>
-                                        <td>60.3%</td>
-                                        <td>$724.32</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog/post.html</td>
-                                        <td>1233</td>
-                                        <td>93.2%</td>
-                                        <td>$126.34</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2>Striped Rows</h2>
-                        <div class="table-responsive">
-                            <table class="table table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Page</th>
-                                        <th>Visits</th>
-                                        <th>% New Visits</th>
-                                        <th>Revenue</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>/index.html</td>
-                                        <td>1265</td>
-                                        <td>32.3%</td>
-                                        <td>$321.33</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/about.html</td>
-                                        <td>261</td>
-                                        <td>33.3%</td>
-                                        <td>$234.12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/sales.html</td>
-                                        <td>665</td>
-                                        <td>21.3%</td>
-                                        <td>$16.34</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog.html</td>
-                                        <td>9516</td>
-                                        <td>89.3%</td>
-                                        <td>$1644.43</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/404.html</td>
-                                        <td>23</td>
-                                        <td>34.3%</td>
-                                        <td>$23.52</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/services.html</td>
-                                        <td>421</td>
-                                        <td>60.3%</td>
-                                        <td>$724.32</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog/post.html</td>
-                                        <td>1233</td>
-                                        <td>93.2%</td>
-                                        <td>$126.34</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2>Contextual Classes</h2>
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Page</th>
-                                        <th>Visits</th>
-                                        <th>% New Visits</th>
-                                        <th>Revenue</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="active">
-                                        <td>/index.html</td>
-                                        <td>1265</td>
-                                        <td>32.3%</td>
-                                        <td>$321.33</td>
-                                    </tr>
-                                    <tr class="success">
-                                        <td>/about.html</td>
-                                        <td>261</td>
-                                        <td>33.3%</td>
-                                        <td>$234.12</td>
-                                    </tr>
-                                    <tr class="warning">
-                                        <td>/sales.html</td>
-                                        <td>665</td>
-                                        <td>21.3%</td>
-                                        <td>$16.34</td>
+                                        <td>June 3, 2003</td>
+                                        <td>Pollen</td>
+                                        <td>Allergy</td>
+                                        <td>Ongoing</td>
+                                        <td><a href="#">View</a></td>
                                     </tr>
                                     <tr class="danger">
-                                        <td>/blog.html</td>
-                                        <td>9516</td>
-                                        <td>89.3%</td>
-                                        <td>$1644.43</td>
+                                        <td>April 2015</td>
+                                        <td>High Cholestrol</td>
+                                        <td>Immediate Health</td>
+                                        <td>Ongoing</td>
+                                        <td><a href="#">View</a></td>
                                     </tr>
-                                    <tr>
-                                        <td>/404.html</td>
-                                        <td>23</td>
-                                        <td>34.3%</td>
-                                        <td>$23.52</td>
+                                    <tr class="danger">
+                                        <td>May 17, 2014</td>
+                                        <td>High Blood Pressure</td>
+                                        <td>Immediate Health</td>
+                                        <td>Ongoing</td>
+                                        <td><a href="#">View</a></td>
                                     </tr>
-                                    <tr>
-                                        <td>/services.html</td>
-                                        <td>421</td>
-                                        <td>60.3%</td>
-                                        <td>$724.32</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog/post.html</td>
-                                        <td>1233</td>
-                                        <td>93.2%</td>
-                                        <td>$126.34</td>
+                                    <tr class="success">
+                                        <td>January 2, 2012</td>
+                                        <td>Ankle Fracture</td>
+                                        <td>Physical Health</td>
+                                        <td>Closed</td>
+                                        <td><a href="#">View</a></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h2>Bootstrap Docs</h2>
-                        <p>For complete documentation, please visit <a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap's Tables Documentation</a>.</p>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Contact Information for all Medicinal Professionals</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Last visited</th>
+                                        <th>Type</th>
+                                        <th>Name</th>
+                                        <th>Address</th>
+                                        <th>Phone Number</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Nov 20, 2016</td>
+                                        <td>Family Doctor</td>
+                                        <td>Dr. Kothari</td>
+                                        <td>101 College St, Toronto, ON M5G 1L7</td>
+                                        <td>416 340 3131</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>August 11, 2016</td>
+                                        <td>Physiotherapist</td>
+                                        <td>Dr. Brown</td>
+                                        <td>1065 Canadian Place, Unit 101, Mississauga, Ontario, L4W0C2</td>
+                                        <td>416 622 1939</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>June 07, 2016</td>
+                                        <td>Dentist</td>
+                                        <td>Dr. Pavelic</td>
+                                        <td>190 Sherway Dr., Suite 302, Etobicoke, ON M9C 5N2</td>
+                                        <td>416 639 2546</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>December 5, 2015</td>
+                                        <td>Dermatologist</td>
+                                        <td>Dr. El-Sawaf</td>
+                                        <td>306-99 Northfield Drive East, Waterloo ON N2K 3P9 </td>
+                                        <td>519 885 0222</td>
+                                        <td><a href="#">View</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <!-- /.row -->
