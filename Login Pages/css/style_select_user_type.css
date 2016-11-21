@@ -1,0 +1,73 @@
+/* CSS Document */
+
+/*
+ * IMporting the font
+*/	
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Roboto);
+
+/*
+ * General styling
+ */
+body {
+	padding:0;
+	margin:0;
+	background-color: #222222;
+	}
+	
+	
+h1{
+	margin:40px auto;
+	padding:0;
+	font-family: 'Roboto Slab', serif;
+	font-size:40px;
+	font-weight:1000;
+	color:#FFFFFF;
+	text-align:center;
+	}	
+
+
+.forgot{
+	text-align: center;
+	font-size:25px;
+	font-family: 'Roboto Slab', serif;
+	font-weight:1000;
+	color:#FFFFFF;
+}
+
+.doc{
+	text-align: center;
+	font-size:15px;
+	font-family: 'Roboto Slab', serif;
+	font-weight:1000;
+	color:#BFC9CA;
+	padding: 0px 0px 0px 42px
+}
+
+.patient{
+	text-align: center;
+	font-size:15px;
+	font-family: 'Roboto Slab', serif;
+	font-weight:1000;
+	color:#BFC9CA;
+	padding: 0px 0px 0px 91px
+}
+
+.blackiconcolor {
+	color:#BFC9CA;
+	padding: 0px 20px 0px 60px;
+}
+
+/*
+ * Styling the container for the login form.
+ */
+
+.login {
+	width:350px;
+	padding:25px;
+	margin:50px auto;
+	background-color:#2c3e50;
+	}
+
+	
+
+
