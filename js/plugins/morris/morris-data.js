@@ -121,12 +121,16 @@ $(function() {
             label: "Dentist Visits",
             value: 2
         }, {
+            label: "Dermatologist Visits",
+            value: 1
+        }, {
             label: "Family Doctor Visits",
             value: 5
         }, {
-            label: "Orthodontist Visits",
-            value: 2
+            label: "Podiatrist Visits",
+            value: 1
         }],
+        colors: ["#2AB66E", "#612AB6", "#DC1310", "#DCB110"],
         resize: true
     });
 
@@ -134,23 +138,20 @@ $(function() {
     Morris.Bar({
         element: 'morris-bar-chart',
         data: [{
-            device: 'iPhone',
-            geekbench: 136
+            device: 'Cold/Sinus',
+            geekbench: 4
         }, {
-            device: 'iPhone 3G',
-            geekbench: 137
+            device: 'Foot/Ankle',
+            geekbench: 1
         }, {
-            device: 'iPhone 3GS',
-            geekbench: 275
+            device: 'Skin',
+            geekbench: 1
         }, {
-            device: 'iPhone 4',
-            geekbench: 380
+            device: 'Cavity/Dental',
+            geekbench: 2
         }, {
-            device: 'iPhone 4S',
-            geekbench: 655
-        }, {
-            device: 'iPhone 5',
-            geekbench: 1571
+            device: 'Health Checkup',
+            geekbench: 1
         }],
         xkey: 'device',
         ykeys: ['geekbench'],
@@ -158,7 +159,8 @@ $(function() {
         barRatio: 0.4,
         xLabelAngle: 35,
         hideHover: 'auto',
-        resize: true
+        resize: true,
+        barColors: ["#612AB6", "#DC1310", "#DCB110"],
     });
 
     // Area Chart
@@ -223,4 +225,7 @@ $(function() {
         resize: true
     });
     
+
+
+
 });
