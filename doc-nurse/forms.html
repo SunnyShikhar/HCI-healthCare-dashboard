@@ -95,13 +95,13 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li>
+                    <li class="active">
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Summary</a>
                     </li>
                     <li>
                         <a href="history.html"><i class="fa fa-fw fa-table"></i> Medical History</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="profile.html"><i class="fa fa-fw fa-edit"></i> Profile</a>
                     </li>
                 </ul>
@@ -117,15 +117,14 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Patient Profile
-                            <small>[Patient Persona]</small>
+                            Add Record
                         </h1>
                         <ol class="breadcrumb">
                             <li>
                                 <i class="fa fa-dashboard"></i>  <a href="index.html">Summary</a>
                             </li>
                             <li class="active">
-                                <i class="fa fa-file"></i> Patient Profile
+                                <i class="fa fa-edit"></i> Add Record
                             </li>
                         </ol>
                     </div>
@@ -133,42 +132,74 @@
                 <!-- /.row -->
 
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h2 align="center">Patient Information</h2>
-                        <div class="table-responsive">
-                            <!--<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">-->
-                            <table id="medicalVisits" class="table table-bordered table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Item</th>
-                                        <th>Entry</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><b>Name</b></td>
-                                        <td>Persona</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>Date of Birth</b></td>
-                                        <td>May 19, 1953</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>Age</b></td>
-                                        <td>63 years</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>Address</b></td>
-                                        <td>200 University Ave W, Waterloo, ON, Canada</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>Phone Number</b></td>
-                                        <td>123 123 1234</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    <div class="col-lg-6">
+
+                        <form role="form">
+
+                            <div class="form-group">
+                                <label>Please select who is inputting new entry?</label><br>
+                                 <select>
+                                  <option value="volvo">Family Doctor</option>
+                                  <option value="saab">Dentist</option>
+                                  <option value="mercedes">Physiotherapist</option>
+                                  <option value="audi">Dermatologist</option>
+                                </select> 
+                            </div>
+
+                            <div class="form-group">
+                                <label>Issue:</label>
+                                <input class="form-control" placeholder="Enter text">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Diagnosis:</label>
+                                <input class="form-control" placeholder="Enter text">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Prescription:</label>
+                                <input class="form-control" placeholder="Enter text">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Dosage:</label>
+                                <input class="form-control" placeholder="Enter text">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Upload Relevant Files:</label>
+                                <input type="file">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Comments</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>Entry type:</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Urgent
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Ongoing
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Closed
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-default">Submit Button</button>
+                            <button type="reset" class="btn btn-default">Reset Button</button>
+
+                        </form>
                 </div>
                 <!-- /.row -->
 
@@ -182,10 +213,10 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="../js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
