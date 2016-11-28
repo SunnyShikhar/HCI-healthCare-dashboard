@@ -150,7 +150,7 @@ $(function() {
             device: 'Cavity/Dental',
             geekbench: 2
         }, {
-            device: 'Health Checkup',
+            device: 'Checkup',
             geekbench: 1
         }],
         xkey: 'device',
