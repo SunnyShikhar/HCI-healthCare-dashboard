@@ -91,7 +91,7 @@ $(function() {
             visits: 6
         }, {
             d: '2016',
-            visits: 4
+            visits: 9
         }, /*{
             d: '2012-10-29',
             visits: 1420
